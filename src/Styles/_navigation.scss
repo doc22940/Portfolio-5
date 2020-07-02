@@ -1,0 +1,232 @@
+/* Main Navigation Styles */
+:root {
+  /* --nav-bg: #7a9e7e; */
+  --nav-bg: #001a23;
+  --logo-clr: white;
+}
+.nav {
+  background: var(--nav-bg);
+  transition: background 250ms ease-in-out;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.nav__logo {
+  text-decoration: none;
+  color: var(--logo-clr);
+}
+
+.nav__logo:hover {
+  color: var(--logo-clr);
+}
+
+.nav__logo:focus {
+  border: 1px solid #7a9e7e;
+}
+
+.nav__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  list-style: none;
+  height: 0;
+  transition: 250ms height ease-in-out;
+  overflow: hidden;
+}
+
+.active {
+  height: 300px;
+  transition: height 0.4s linear;
+  transition-delay: 0.6s;
+}
+
+.nav__link {
+  margin-top: 50px;
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+
+.nav a:hover,
+.nav a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+/* nav link hover */
+.nav__link a::before,
+.nav__link a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav__link a::before {
+  margin-right: 10px;
+  content: "<";
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.nav__link a::after {
+  margin-left: 10px;
+  content: "/>";
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.nav__link a:hover::before,
+.nav__link a:hover::after,
+.nav__link a:focus::before,
+.nav__link a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+/* Burger Menu Styles */
+.hamburger {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  padding: 0.5rem;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+.burger {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  display: flex;
+  background: white;
+  transition: opacity 0.5s ease;
+  border-radius: 1px;
+}
+
+.burger::after,
+.burger::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  border-radius: 1px;
+  height: 3px;
+  background: white;
+  transition: transform 0.5s cubic-bezier(1, -0.47, 1, 1.45);
+  opacity: 1;
+}
+
+.burger::after {
+  transform: translateY(-8px);
+}
+
+.burger::before {
+  transform: translateY(8px);
+}
+
+/* Open Burger styles */
+.open .burger {
+  animation: hide 0.2s 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards;
+}
+
+.open .burger::after {
+  animation: pop 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards,
+    flip 0.4s 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards;
+}
+
+.open .burger::before {
+  animation: popTwo 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards,
+    flipTwo 0.4s 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards;
+}
+/* Burger Keyframes */
+@keyframes pop {
+  0% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes flip {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@keyframes popTwo {
+  from {
+    transform: translateY(-8px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes flipTwo {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes hide {
+  to {
+    background: transparent;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* Switch colourse for desktop */
+  :root {
+    --nav-bg: transparent;
+    --logo-clr: black;
+  }
+  /* Style if scrolled for visibility */
+  .scrolled {
+    background: #001a23;
+  }
+  .scrolled .nav__logo {
+    color: white;
+  }
+  /* Style nav for desktop view */
+  .hamburger {
+    display: none;
+  }
+  .nav__list {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+  }
+  .nav__link {
+    margin: 0 5px;
+  }
+  .nav__logo {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
