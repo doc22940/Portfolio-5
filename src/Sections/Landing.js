@@ -2,12 +2,13 @@ import React from "react";
 import Pointer from "../Components/Pointer";
 import styled from "styled-components";
 
-const LandingPage = styled.div`
+const LandingPage = styled.section`
   background: linear-gradient(to right, #e8f1f2 50%, #31493c 50%);
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 `;
 const Name = styled.h1`
   position: absolute;
