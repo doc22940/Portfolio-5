@@ -2,12 +2,22 @@ import React from "react";
 import CardsList from "../Components/CardList";
 import styled from "styled-components";
 
+const Container = styled.section`
+  background: #e8f2eb;
+  padding: 2.5rem;
+`;
+
+const Title = styled.h1`
+  font-size: 3rem;
+  margin: 20px 0;
+`;
+
 const Projects = () => {
   return (
-    <div>
-      <h1>Some of my Work</h1>
+    <Container>
+      <Title>Some of my Work</Title>
       <CardsList />
-    </div>
+    </Container>
   );
 };
 

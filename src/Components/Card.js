@@ -22,7 +22,14 @@ function Card(props) {
       >
         <div class="text">View More</div>
       </div>
-      <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        style={{
+          overlay: { zIndex: 999 },
+          content: { zIndex: 999 },
+        }}
+      >
         <div className="modal-container">
           <h2 className="modal-title">{title}</h2>
           <h3 className="techsUsed">{stack}</h3>

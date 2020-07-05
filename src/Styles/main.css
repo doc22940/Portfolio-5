@@ -22,7 +22,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 990;
 }
 
 .nav__logo {
@@ -346,13 +346,13 @@
 
 .card {
   position: relative;
-  max-width: 350px;
+  max-width: 400px;
   display: inline-block;
 }
 
 .image {
   display: block;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .overlay {
@@ -410,6 +410,7 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -425,6 +426,7 @@ button:hover {
 
 .modal-title {
   font-size: 3rem;
+  margin: 20px;
 }
 
 .modal-desc {
@@ -478,7 +480,7 @@ button:hover {
 
 .techsUsed {
   font-size: 0.9rem;
-  margin: 0;
+  margin: 20px;
   color: gray;
 }
 /*# sourceMappingURL=main.css.map */
