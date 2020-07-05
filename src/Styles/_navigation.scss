@@ -3,6 +3,7 @@
   /* --nav-bg: #7a9e7e; */
   --nav-bg: #001a23;
   --logo-clr: white;
+  --anim-speed: 0.3s;
 }
 .nav {
   background: var(--nav-bg);
@@ -143,17 +144,20 @@
 
 /* Open Burger styles */
 .open .burger {
-  animation: hide 0.2s 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards;
+  animation: hide 0.2s var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+    forwards;
 }
 
 .open .burger::after {
-  animation: pop 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards,
-    flip 0.4s 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards;
+  animation: pop var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards,
+    flip var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+      forwards;
 }
 
 .open .burger::before {
-  animation: popTwo 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards,
-    flipTwo 0.4s 0.4s cubic-bezier(1, -0.47, 1, 1.45) forwards;
+  animation: popTwo var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards,
+    flipTwo var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+      forwards;
 }
 /* Burger Keyframes */
 @keyframes pop {

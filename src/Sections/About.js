@@ -4,11 +4,12 @@ import styled from "styled-components";
 import Github from "../Assets/icons/github.svg";
 import LinkedIn from "../Assets/icons/linkedin.svg";
 import Resume from "../Assets/icons/Resume.svg";
+import CV from "../Assets/resume.pdf";
 
 const AboutContainer = styled.section`
   position: relative;
-  z-index: -5;
-  background: #e8f2eb;
+  background: rgba(232, 242, 235, 0.7);
+  margin-bottom: 5rem;
   &::after {
     content: "";
     position: absolute;
@@ -80,7 +81,11 @@ const IconContainer = styled.div`
 `;
 const Icon = styled.img`
   margin: 10px;
-`
+  &:hover {
+    transform: scale(1.01) translateY(-2px);
+    opacity: 0.85;
+  }
+`;
 
 const About = () => {
   return (
@@ -90,25 +95,33 @@ const About = () => {
         <FlexContainer>
           <Title>Who am I?</Title>
           <SecondaryTitle>
-            Hey There! My name is Richard. I am Full Stack Web Developer
+            Hey There! My name is Richard. I am a Full Stack Web Developer
           </SecondaryTitle>
           <Paragraph>
             I am a Web developer and Computer Science Student with a passion for
             <b> Design </b> and <b>Innovation</b>. I build <b>accessible</b> and
-            <b> responsive </b>
-            sites. I am a very <u>curious</u> person. I love learning
-            <u> languages </u> and have a <u>passion</u> for Science and how the
-            world works.
+            <b> responsive </b> sites. I am a very <u>curious</u> person. I have
+            a passion learning <u>languages</u> (mainly French and German) and I
+            enjoy Science and finding out how the world works. I am also a
+            chemistry enthusiast and enjoy a good book.
           </Paragraph>
           <IconContainer>
-            <a href="https://github.com/MeRichard123/" target="_blank">
-              <Icon src={Github} alt="" />
+            <a
+              href="https://github.com/MeRichard123/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon src={Github} alt="Github" />
             </a>
-            <a href="https://www.linkedin.com/in/richardcoric/" target="_blank">
-              <Icon src={LinkedIn} alt="" />
+            <a
+              href="https://www.linkedin.com/in/richardcoric/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon src={LinkedIn} alt="LinkedIn" />
             </a>
-            <a href="">
-              <Icon src={Resume} alt="" />
+            <a href={CV} target="_blank" rel="noopener noreferrer">
+              <Icon src={Resume} alt="Resume" />
             </a>
           </IconContainer>
         </FlexContainer>

@@ -8,7 +8,7 @@ const LandingPage = styled.section`
   height: 100vh;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5.5rem;
 `;
 const Name = styled.h1`
   position: absolute;
