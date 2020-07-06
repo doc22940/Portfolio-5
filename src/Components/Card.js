@@ -40,6 +40,7 @@ function Card(props) {
               href={code}
               target="_blank"
               rel="noopener noreferrer"
+              title="Code Link"
             >
               See Code
             </a>
@@ -47,6 +48,7 @@ function Card(props) {
               className="button"
               href={site}
               target="_blank"
+              title="Live Site Link"
               rel="noopener noreferrer"
             >
               Live Site

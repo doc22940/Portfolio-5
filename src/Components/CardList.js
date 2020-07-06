@@ -13,10 +13,11 @@ function CardsList() {
       title: "Australia",
       stack: "React JS, Styled Components ",
       image: Australia,
+
       code: "https://github.com/MeRichard123/Australia",
       site: "https://merichard123.github.io/Australia/",
       desc:
-        "I wanted to build another travel site, but this isn't any old travel site. This site shows the various beauties of Australia using Google maps custom CSS carousels. A Friend wanted as way to show of one of his favourite places: Australia. So I built a way for people to see the beauty within.",
+        "I wanted to build another travel site, but this isn't any old travel site. This site shows the various beauties of Australia using Google maps custom CSS carousels. A Friend wanted as way to show of one of his favorite place: Australia. So I built a way for people to see the beauty within.",
     },
     {
       title: "Rich UI",
@@ -34,7 +35,7 @@ function CardsList() {
       code: "https://github.com/MeRichard123/Tedimin",
       site: "https://merichard123.github.io/Tedimin/",
       desc:
-        "Tedimin is a theoretical drug to treat boredom. I was asked to make a website about the testing of drugs to teach students about why medication needs to tested and trialed, I made a site to showcase the product, medical trial and a trail sign up. As a result students in my school learned about process new drugs go through.",
+        "Tedimin is a theoretical drug to treat boredom. I was asked to make a website about the testing of drugs to teach students about why medication needs to tested and trialed, I made a site to showcase the product, medical trial and a trail sign up. As a result students in my school learned about the process new drugs go through.",
     },
     {
       title: "Jakub Art",
@@ -52,7 +53,7 @@ function CardsList() {
       code: "https://github.com/MeRichard123/TurtlesTortoises",
       site: "https://merichard123.github.io/TurtlesTortoises/",
       desc:
-        "Turtles and Tortoises are one of my greatest passions. However I felt that even though there are many different types of each, there wasn't really collection of all of them on the Web. So i recreated my first ever Web Project To inform the world about the wonders of the reptile world. Now all the different types are together in an organized fashion. ",
+        "Turtles and Tortoises are one of my greatest passions. However I felt that even though there are many different types of each, there wasn't really collection of all of them on the Web. So I recreated my first ever Web Project To inform the world about the wonders of the reptile world. Now all the different types are together in an organized fashion. ",
     },
     {
       title: "Equifox",

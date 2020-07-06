@@ -368,6 +368,10 @@
   opacity: 1;
 }
 
+.card:focus .overlay {
+  opacity: 1;
+}
+
 .text {
   color: white;
   position: absolute;
@@ -388,6 +392,10 @@
 }
 
 .card:hover .overlayBottom {
+  height: 100%;
+}
+
+.card:focus .overlayBottom {
   height: 100%;
 }
 
@@ -474,7 +482,8 @@ button:hover {
   margin: 20px 10px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   opacity: 1;
 }
 

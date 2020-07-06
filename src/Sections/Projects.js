@@ -9,12 +9,12 @@ const Container = styled.section`
 
 const Title = styled.h1`
   font-size: 3rem;
-  margin: 20px 0;
+  margin: 30px 0 50px 0;
 `;
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="projects">
       <Title>Some of my Work</Title>
       <CardsList />
     </Container>

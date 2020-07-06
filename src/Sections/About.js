@@ -72,7 +72,11 @@ const Image = styled.img`
   height: 20vmax;
   -o-object-fit: contain;
   object-fit: contain;
-  margin: 50px 0;
+  margin: 0 0 50px 0;
+  align-self: center;
+  @media screen and (max-width: 900px) {
+    margin: 50px 0;
+  }
 `;
 const IconContainer = styled.div`
   display: flex;
@@ -109,6 +113,7 @@ const About = () => {
             <a
               href="https://github.com/MeRichard123/"
               target="_blank"
+              title="Github"
               rel="noopener noreferrer"
             >
               <Icon src={Github} alt="Github" />
@@ -116,11 +121,17 @@ const About = () => {
             <a
               href="https://www.linkedin.com/in/richardcoric/"
               target="_blank"
+              title="Linked In"
               rel="noopener noreferrer"
             >
               <Icon src={LinkedIn} alt="LinkedIn" />
             </a>
-            <a href={CV} target="_blank" rel="noopener noreferrer">
+            <a
+              href={CV}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Curriculum Vitae"
+            >
               <Icon src={Resume} alt="Resume" />
             </a>
           </IconContainer>

@@ -44,6 +44,7 @@ export const Landing = () => {
       <Name className="name">Ric</Name>
       <Letter
         width="460"
+        title="H"
         height="555"
         viewBox="0 0 460 555"
         fill="none"

@@ -70,13 +70,15 @@ const Icon = styled.img`
   align-self: center;
   filter: grayscale(1);
   transition: all 0.5s ease-out;
-  &:hover {
+  &:hover,
+  &:focus {
     filter: grayscale(0);
   }
 `;
 const ModifiedIcon = styled(Icon)`
   opacity: 0.7;
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
   }
 `;
@@ -97,10 +99,13 @@ const SecondaryTitle = styled.h3`
   font-weight: 500;
   font-size: 1.4rem;
 `;
+const Section = styled.section`
+  margin-bottom: 5rem;
+`;
 
 const Skills = () => {
   return (
-    <section>
+    <Section>
       <Title>My Tech Stack</Title>
       <SecondaryTitle>
         These are the technologies and utilities I work with.
@@ -108,49 +113,53 @@ const Skills = () => {
       <FlexWrapper>
         <SkillContainer>
           <Tooltip content="HTML - The Bones of a website">
-            <Icon src={html} />
+            <Icon src={html} title="HTML" alt="HTML" />
           </Tooltip>
           <Tooltip content="CSS - The styles">
-            <Icon src={css} />
+            <Icon src={css} title="CSS" alt="CSS" />
           </Tooltip>
           <Tooltip content="JS - The interactive parts">
-            <Icon src={js} />
+            <Icon src={js} title="Javascript" alt="JS" />
           </Tooltip>
           <Tooltip content="React- Javascript Framework">
-            <Icon src={react} />
+            <Icon src={react} title="React JS" alt="React" />
           </Tooltip>
           <Tooltip content="SCSS - A CSS Preprocessor">
-            <Icon src={scss} />
+            <Icon src={scss} title="SCSS" alt="SCSS" />
           </Tooltip>
           <Tooltip content="Styled-components - CSS-in-JS">
-            <Icon src={styledComp} />
+            <Icon
+              src={styledComp}
+              title="Styled-Components"
+              alt="Styled components"
+            />
           </Tooltip>
           <Tooltip content="JQuery- A Fun JS Library">
-            <Icon src={jquery} />
+            <Icon src={jquery} title="Jquery" alt="Jquery" />
           </Tooltip>
           <Tooltip content="Bootstrap - A CSS Framework">
-            <Icon src={Bootstrap} />
+            <Icon src={Bootstrap} title="Bootstrap" alt="Bootstrap" />
           </Tooltip>
           <Tooltip content="Git - For Version Control">
-            <Icon src={Git} />
+            <Icon src={Git} title="Git" alt="Git" />
           </Tooltip>
           <Tooltip content="Github">
-            <ModifiedIcon src={GitHub} />
+            <ModifiedIcon src={GitHub} title="Github" alt="Github" />
           </Tooltip>
           <Tooltip content="Figma - Design Software">
-            <Icon src={Figma} />
+            <Icon src={Figma} title="Figma" alt="Figma" />
           </Tooltip>
           <Tooltip content="VScode- Code Editor">
-            <Icon src={vscode} />
+            <Icon src={vscode} title="VScode" alt="VScode" />
           </Tooltip>
           <Tooltip content="Python">
-            <Icon src={python} />
+            <Icon src={python} title="python" alt="Python" />
           </Tooltip>
           <Tooltip content="Django- Fullstack python library">
-            <ModifiedIcon src={Django} />
+            <ModifiedIcon src={Django} title="django" alt="Django" />
           </Tooltip>
           <Tooltip content="Flask - Python micro web framework">
-            <ModifiedIcon src={Flask} />
+            <ModifiedIcon src={Flask} title="Flask" alt="flask" />
           </Tooltip>
         </SkillContainer>
 
@@ -568,7 +577,7 @@ const Skills = () => {
           </defs>
         </Svg>
       </FlexWrapper>
-    </section>
+    </Section>
   );
 };
 
