@@ -85,6 +85,8 @@ const IconContainer = styled.div`
 `;
 const Icon = styled.img`
   margin: 10px;
+  cursor: pointer;
+  padding: 20px;
   &:hover {
     transform: scale(1.01) translateY(-2px);
     opacity: 0.85;
@@ -126,6 +128,7 @@ const About = () => {
             >
               <Icon src={Github} alt="Github" />
             </a>
+
             <a
               href="https://www.linkedin.com/in/richardcoric/"
               target="_blank"
