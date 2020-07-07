@@ -159,12 +159,12 @@ const Skills = () => {
           <Tooltip content="Python">
             <Icon src={python} title="python" alt="Python" />
           </Tooltip>
-          <Tooltip content="Django- Fullstack python library">
+          {/* <Tooltip content="Django- Fullstack python library">
             <ModifiedIcon src={Django} title="django" alt="Django" />
           </Tooltip>
           <Tooltip content="Flask - Python micro web framework">
             <ModifiedIcon src={Flask} title="Flask" alt="flask" />
-          </Tooltip>
+          </Tooltip> */}
         </SkillContainer>
 
         <Svg
