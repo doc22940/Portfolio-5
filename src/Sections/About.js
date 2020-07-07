@@ -89,6 +89,13 @@ const Icon = styled.img`
     transform: scale(1.01) translateY(-2px);
     opacity: 0.85;
   }
+  @media screen and (min-width: 1900px) {
+    transform: scale(2);
+    margin: 30px;
+    &:hover {
+      transform: scale(2.01) translateY(-4px);
+    }
+  }
 `;
 
 const About = () => {

@@ -26,7 +26,7 @@ from {
   }
   to {
     transform: scale(0.1);
-    transform: translate(150px, -20px);
+    transform: translate(145px, -18px);
   }
 `;
 const Cursor = styled.path`
@@ -73,6 +73,10 @@ const Icon = styled.img`
   &:hover,
   &:focus {
     filter: grayscale(0);
+  }
+  @media screen and (min-width: 1900px) {
+    width: 105px;
+    height: calc(75px * 2);
   }
 `;
 const ModifiedIcon = styled(Icon)`

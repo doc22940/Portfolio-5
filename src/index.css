@@ -8,8 +8,18 @@ body {
 html {
   scroll-behavior: smooth;
 }
+input,
+textarea {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 200%;
+  }
 }

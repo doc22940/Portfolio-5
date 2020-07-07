@@ -123,7 +123,7 @@
 .hamburger {
   position: absolute;
   right: 10px;
-  top: 20px;
+  top: 15px;
   padding: 0.5rem;
 }
 
@@ -342,6 +342,7 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .card {

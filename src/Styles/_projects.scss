@@ -2,16 +2,19 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 .card {
   position: relative;
   max-width: 400px;
   display: inline-block;
 }
+
 .image {
   display: block;
   max-width: 400px;
 }
+
 .overlay {
   position: absolute;
   transition: all 0.3s ease;
