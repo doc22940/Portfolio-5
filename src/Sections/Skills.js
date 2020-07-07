@@ -5,9 +5,9 @@ import Tooltip from "react-simple-tooltip";
 // Images
 import Bootstrap from "../Assets/icons/Skills/bootstrap.svg";
 import css from "../Assets/icons/Skills/css.svg";
-import Django from "../Assets/icons/Skills/django.svg";
+// import Django from "../Assets/icons/Skills/django.svg";
 import Figma from "../Assets/icons/Skills/figma.svg";
-import Flask from "../Assets/icons/Skills/flask.svg";
+// import Flask from "../Assets/icons/Skills/flask.svg";
 import Git from "../Assets/icons/Skills/git.svg";
 import GitHub from "../Assets/icons/Skills/GitHub.svg";
 import html from "../Assets/icons/Skills/html.svg";
