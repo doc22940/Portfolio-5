@@ -33,6 +33,7 @@ const Projects = () => {
       <Button
         href="https://github.com/MeRichard123?tab=repositories"
         target="_blank"
+        rel="noopener noreferrer"
       >
         View More
       </Button>

@@ -10,7 +10,6 @@ function Nav() {
   useEffect(() => {
     document.addEventListener("scroll", () => {
       const scrollCheck = window.scrollY < 300;
-      console.log("Scroll Check");
       if (scrollCheck !== isTop) {
         setIsTop(!isTop);
       }

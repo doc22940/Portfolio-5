@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Twitter from "../Assets/icons/twitter.svg";
-import Instagram from "../Assets/icons/instagram.svg";
+import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 const FooterContainer = styled.footer`
   background: #31493c;
@@ -17,23 +16,31 @@ const FooterText = styled.p`
 const IconContainer = styled.div`
   display: flex;
 `;
-const Icon = styled.img`
-  margin: 10px;
-  height: 20px;
-  @media screen and (min-width: 1900px) {
-    height: 40px;
-  }
-`;
+
+const IconStyles = {
+  color: "white",
+  fontSize: "1.5rem",
+  margin: "10px",
+};
+
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterText>Richard Coric &copy; 2020</FooterText>
       <IconContainer>
-        <a href="https://www.instagram.com/me_richard1/">
-          <Icon src={Instagram} alt="Instagram Logo" />
+        <a
+          href="https://www.instagram.com/me_richard1/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram style={IconStyles} />
         </a>
-        <a href="https://twitter.com/Richard5977">
-          <Icon src={Twitter} alt="Twitter Logo" />
+        <a
+          href="https://twitter.com/Richard5977"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTwitter style={IconStyles} />
         </a>
       </IconContainer>
     </FooterContainer>
