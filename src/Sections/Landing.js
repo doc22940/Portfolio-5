@@ -32,6 +32,31 @@ const Name = styled.h1`
       right: 1px;
     }
   }
+  @media (max-width: 2000px) and (min-width: 1899px) {
+    &:first-of-type {
+      left: 50px;
+    }
+    &:last-of-type {
+      right: 50px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    font-size: calc(1vw + 2rem);
+    &:first-of-type {
+      left: 40px;
+    }
+    &:last-of-type {
+      right: 40px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    &:first-of-type {
+      left: 1px;
+    }
+    &:last-of-type {
+      right: 1px;
+    }
+  }
 `;
 const Letter = styled.svg`
   max-height: 60vmax;
