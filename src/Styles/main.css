@@ -373,6 +373,10 @@
   opacity: 1;
 }
 
+.ico {
+  margin: 20px;
+}
+
 .text {
   color: white;
   position: absolute;

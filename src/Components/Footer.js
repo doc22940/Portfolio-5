@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { GoLinkExternal } from "react-icons/go";
 
 const FooterContainer = styled.footer`
   background: #31493c;
@@ -41,6 +42,13 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <FaTwitter style={IconStyles} />
+        </a>
+        <a
+          href="https://merichard123.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GoLinkExternal style={IconStyles} />
         </a>
       </IconContainer>
     </FooterContainer>

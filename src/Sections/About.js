@@ -113,11 +113,10 @@ const About = () => {
           <Paragraph>
             I am a Web developer and Computer Science Student with a passion for
             <b> Design </b> and <b>Innovation</b>. I build <b>accessible</b> and
-            <b> responsive </b> sites. I am currently aiming to become a full
-            stack python developer. I am a very <u>curious</u> person. I have a
-            passion learning <u>languages</u> (mainly French and German) and I
-            enjoy Science and finding out how the world works. I am also a
-            chemistry enthusiast and enjoy a good book.
+            <b> responsive </b> sites. I am currently aiming towards improving
+            my full stack python skills. I am a very <u>curious</u> person. I
+            have a passion learning in <u>languages</u> (mainly French and
+            German).
           </Paragraph>
           <IconContainer>
             <a

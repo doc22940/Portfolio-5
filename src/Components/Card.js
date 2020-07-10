@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Styles/main.css";
 import Modal from "react-modal";
 import { MdClose } from "react-icons/md";
+import { IconContext } from "react-icons";
 
 const ButtonStyles = {
   position: "absolute",
@@ -11,7 +12,7 @@ const ButtonStyles = {
 
 Modal.setAppElement("#root");
 function Card(props) {
-  const { title, image, desc, code, site, stack } = props;
+  const { title, image, desc, code, site, stack, overlayIcons } = props;
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <div className="card">
@@ -21,6 +22,11 @@ function Card(props) {
         onClick={() => setModalIsOpen(true)}
       >
         <div class="text">View More</div>
+        <div className="ico">
+          <IconContext.Provider value={{ color: "white", size: "3rem" }}>
+            {overlayIcons}
+          </IconContext.Provider>
+        </div>
       </div>
       <Modal
         isOpen={modalIsOpen}

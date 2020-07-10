@@ -7,13 +7,23 @@ import JakubArt from "../Assets/img/Projects/Jakub Art.png";
 import TortTurt from "../Assets/img/Projects/TURTLES.png";
 import Equifox from "../Assets/img/Projects/EQUIFOX.png";
 
+import {
+  DiCss3,
+  DiHtml5,
+  DiJsBadge,
+  DiJqueryLogo,
+  DiReact,
+  DiSass,
+  DiBootstrap,
+} from "react-icons/di";
+
 function CardsList() {
   const projects = [
     {
       title: "Australia",
       stack: "React JS, Styled Components ",
       image: Australia,
-
+      overlayIcons: [<DiReact />],
       code: "https://github.com/MeRichard123/Australia",
       site: "https://merichard123.github.io/Australia/",
       desc:
@@ -23,6 +33,7 @@ function CardsList() {
       title: "Rich UI",
       stack: "HTML, SCSS",
       image: Rich,
+      overlayIcons: [<DiHtml5 />, <DiSass />],
       code: "https://github.com/MeRichard123/Rich-UI-Docs",
       site: "https://rich-ui.netlify.app/",
       desc:
@@ -32,6 +43,7 @@ function CardsList() {
       title: "Tedimin",
       stack: "HTML, SCSS",
       image: Tedimin,
+      overlayIcons: [<DiHtml5 />, <DiSass />],
       code: "https://github.com/MeRichard123/Tedimin",
       site: "https://merichard123.github.io/Tedimin/",
       desc:
@@ -41,6 +53,7 @@ function CardsList() {
       title: "Jakub Art",
       stack: "HTML, SCSS, JQuery",
       image: JakubArt,
+      overlayIcons: [<DiHtml5 />, <DiSass />, <DiJqueryLogo />],
       code: "https://github.com/MeRichard123/jakubArt",
       site: "https://artjakub.netlify.com/",
       desc:
@@ -50,6 +63,7 @@ function CardsList() {
       title: "Turtles and Tortoises",
       stack: "HTML, CSS3",
       image: TortTurt,
+      overlayIcons: [<DiHtml5 />, <DiCss3 />],
       code: "https://github.com/MeRichard123/TurtlesTortoises",
       site: "https://merichard123.github.io/TurtlesTortoises/",
       desc:
@@ -59,6 +73,7 @@ function CardsList() {
       title: "Equifox",
       stack: "HTML, CSS, Bootstrap, JS",
       image: Equifox,
+      overlayIcons: [<DiHtml5 />, <DiCss3 />, <DiBootstrap />, <DiJsBadge />],
       code: "https://github.com/MeRichard123/Equifox",
       site: "https://teamequifox.netlify.com/",
       desc:
@@ -71,6 +86,7 @@ function CardsList() {
         <Card
           key={index}
           image={project.image}
+          overlayIcons={project.overlayIcons}
           title={project.title}
           stack={project.stack}
           desc={project.desc}

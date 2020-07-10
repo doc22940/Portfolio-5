@@ -148,7 +148,7 @@ const Blog = () => {
           </BlogItem>
         </Link>
       </FlexContainer>
-      <Button href="https://merichard123.github.io/blog/" target="_blank">
+      <Button href="https://dev.to/merichard123" target="_blank">
         See All
       </Button>
     </BlogContainer>
