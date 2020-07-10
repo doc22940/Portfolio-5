@@ -61,13 +61,7 @@ const Contact = () => {
   return (
     <FormSection id="contact">
       <Title>Get In Touch?</Title>
-      <Form
-        method="post"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
-        name="contact"
-      >
-        <input type="hidden" name="bot-field" />
+      <Form method="post" name="contact">
         <input type="hidden" name="form-name" value="contact" />
         <Label for="name">Name:</Label>
         <Input type="text" name="name" id="name" required />
