@@ -1,6 +1,6 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
-![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg)
+<!-- ![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg) -->
 [![Netlify][netlify-shield]][netlify-url]
 
 <!-- PROJECT LOGO -->
