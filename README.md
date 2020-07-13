@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/rammazzoti2000/personal_portfolio">
+  <a href="https://github.com/MeRichard123/Portfolio">
     <img src="images/microverse.png" alt="Logo" width="80" height="80">
   </a>
 
