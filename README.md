@@ -70,5 +70,5 @@ Give a :star: if you like this project!
 [issues-url]: https://github.com/MeRichard123/Portfolio/issues
 [netlify-shield]: https://api.netlify.com/api/v1/badges/f88e03cf-ec7b-4593-ac9b-54e4dabffa33/deploy-status
 [netlify-url]: https://app.netlify.com/sites/alex-bangau/deploys
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: /screenshot.png
 
