@@ -31,11 +31,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Usage](#usage)
-* [Automated Test](#automated-test)
 * [Author](#author)
-* [Contributing](#contributing)
-* [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
