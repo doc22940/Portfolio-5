@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Github from "../Assets/icons/github.svg";
 import LinkedIn from "../Assets/icons/linkedin.svg";
 import Resume from "../Assets/icons/Resume.svg";
-import CV from "../Assets/resume.pdf";
+import CV from "../Assets/resume-web.pdf";
 
 const AboutContainer = styled.section`
   position: relative;
@@ -114,9 +114,7 @@ const About = () => {
             I am a Web developer and Computer Science Student with a passion for
             <b> Design </b> and <b>Innovation</b>. I build <b>accessible</b> and
             <b> responsive </b> sites. I am currently aiming towards improving
-            my full stack python skills. I am a very <u>curious</u> person. I
-            have a passion learning in <u>languages</u> (mainly French and
-            German).
+            my full stack python skills. I am a very <u>curious</u> person.
           </Paragraph>
           <IconContainer>
             <a
