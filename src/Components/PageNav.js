@@ -30,7 +30,7 @@ function PageNav() {
   return (
     <Nav>
       <FlexWrapper>
-        <a>Richard Coric</a>
+        <p>Richard Coric</p>
         <List>
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             <HomeLink>Back Home</HomeLink>

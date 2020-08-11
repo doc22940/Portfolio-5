@@ -14,7 +14,11 @@ const BlogList = () => {
       <h3>
         <i>Coming Soon...</i>
       </h3>
-      <a href="https://dev.to/merichard123" target="_blank">
+      <a
+        href="https://dev.to/merichard123"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         For now click here
       </a>
     </div>
