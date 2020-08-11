@@ -5,7 +5,7 @@ import Tooltip from "react-simple-tooltip";
 // Images
 import Bootstrap from "../Assets/icons/Skills/bootstrap.svg";
 import css from "../Assets/icons/Skills/css.svg";
-// import Django from "../Assets/icons/Skills/django.svg";
+import Django from "../Assets/icons/Skills/django.svg";
 import Figma from "../Assets/icons/Skills/figma.svg";
 // import Flask from "../Assets/icons/Skills/flask.svg";
 import Git from "../Assets/icons/Skills/git.svg";
@@ -159,10 +159,10 @@ const Skills = () => {
           <Tooltip content="Python">
             <Icon src={python} title="python" alt="Python" />
           </Tooltip>
-          {/* <Tooltip content="Django- Fullstack python library">
+          <Tooltip content="Django- Fullstack Python Web Framework">
             <ModifiedIcon src={Django} title="django" alt="Django" />
           </Tooltip>
-          <Tooltip content="Flask - Python micro web framework">
+          {/* <Tooltip content="Flask - Python micro web framework">
             <ModifiedIcon src={Flask} title="Flask" alt="flask" />
           </Tooltip> */}
         </SkillContainer>

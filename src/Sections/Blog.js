@@ -103,6 +103,7 @@ const Button = styled.a`
   &:hover {
     opacity: 0.85;
     padding: 0.8rem 4.5rem;
+  }
 `;
 
 const Blog = () => {

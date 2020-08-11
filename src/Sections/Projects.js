@@ -23,6 +23,7 @@ const Button = styled.a`
   &:hover {
     opacity: 0.85;
     padding: 1rem 3rem;
+  }
 `;
 
 const Projects = () => {

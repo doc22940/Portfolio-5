@@ -111,10 +111,13 @@ const About = () => {
             Hey There! My name is Richard. I am a Web Developer.
           </SecondaryTitle>
           <Paragraph>
-            I am a Web developer and Computer Science Student with a passion for
+            I am a Fullstack Web developer and Computer Science Student with a
+            passion for
             <b> Design </b> and <b>Innovation</b>. I build <b>accessible</b> and
-            <b> responsive </b> sites. I am currently aiming towards improving
-            my full stack python skills. I am a very <u>curious</u> person.
+            <b> responsive </b> sites. I work with ReactJS and Django to
+            accomplish this. I am currently aiming towards improving my full
+            stack python skills. I am a very <u>curious</u> person always
+            willing to learn.
           </Paragraph>
           <IconContainer>
             <a

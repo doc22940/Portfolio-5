@@ -47,10 +47,11 @@ const Button = styled.input`
   margin: 10px 0 0 0;
   border: 0;
   text-decoration: none;
-  background: #31493C;
+  background: #31493c;
   transition: all 250ms ease;
   &:hover {
     padding: 0.7rem 8rem;
+  }
 `;
 const Label = styled.label`
   font-size: 1.2rem;
