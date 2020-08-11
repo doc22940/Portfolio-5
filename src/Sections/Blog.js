@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import CodeIcon from "../Assets/img/coding.svg";
 import PaperIcon from "../Assets/img/paper.svg";
+import { Link } from "react-router-dom";
 
 const BlogContainer = styled.section`
   padding: 10px;
@@ -12,7 +13,7 @@ const Title = styled.h2`
   font-size: 3rem;
   margin: 20px 0;
 `;
-const Link = styled.a`
+const BlogLink = styled.a`
   text-decoration: none;
   color: #001a23;
 `;
@@ -115,7 +116,7 @@ const Blog = () => {
         solidifying my own knowledge.
       </SecondaryTitle>
       <FlexContainer>
-        <Link
+        <BlogLink
           href="https://dev.to/merichard123/making-my-own-css-framework-50j9"
           target="_blank"
           rel="noopener noreferrer"
@@ -131,8 +132,8 @@ const Blog = () => {
               </BlogDesc>
             </Narrative>
           </BlogItem>
-        </Link>
-        <Link
+        </BlogLink>
+        <BlogLink
           href="https://dev.to/merichard123/my-website-process-1pg9"
           target="_blank"
           rel="noopener noreferrer"
@@ -147,13 +148,13 @@ const Blog = () => {
               </BlogDesc>
             </Narrative>
           </BlogItem>
-        </Link>
+        </BlogLink>
       </FlexContainer>
-      <Button href="https://dev.to/merichard123" target="_blank">
-        See All
-      </Button>
+      <Link to="/blogs" style={{ textDecoration: "none" }}>
+        <Button>See All</Button>
+      </Link>
     </BlogContainer>
   );
 };
-
+//  href="https://dev.to/merichard123" target="_blank"
 export default Blog;

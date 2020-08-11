@@ -1,6 +1,7 @@
 import React from "react";
 import CardsList from "../Components/CardList";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.section`
   background: #e8f2eb;
@@ -31,13 +32,9 @@ const Projects = () => {
     <Container id="projects">
       <Title>Some of my Work</Title>
       <CardsList />
-      <Button
-        href="https://github.com/MeRichard123?tab=repositories"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View More
-      </Button>
+      <Link to="/projects" style={{ textDecoration: "none" }}>
+        <Button>View More</Button>
+      </Link>
     </Container>
   );
 };
