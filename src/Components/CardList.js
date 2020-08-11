@@ -65,7 +65,7 @@ function CardsList() {
       image: TortTurt,
       overlayIcons: [<DiHtml5 />, <DiCss3 />],
       code: "https://github.com/MeRichard123/TurtlesTortoises",
-      site: "https://merichard123.github.io/TurtlesTortoises/",
+      site: "https://alltheturtles.surge.sh/",
       desc:
         "Turtles and Tortoises are one of my greatest passions. However I felt that even though there are many different types of each, there wasn't really collection of all of them on the Web. So I recreated my first ever Web Project To inform the world about the wonders of the reptile world. Now all the different types are together in an organized fashion. ",
     },

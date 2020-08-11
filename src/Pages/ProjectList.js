@@ -11,6 +11,7 @@ const ProjectList = () => {
     <div>
       <PageNav />
       <Test>My Projects</Test>
+      <h3>Coming Soon...</h3>
     </div>
   );
 };

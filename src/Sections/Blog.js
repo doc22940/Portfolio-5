@@ -156,5 +156,5 @@ const Blog = () => {
     </BlogContainer>
   );
 };
-//  href="https://dev.to/merichard123" target="_blank"
+
 export default Blog;
