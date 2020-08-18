@@ -12,6 +12,7 @@ import Footer from "./Components/Footer";
 // Page imports
 import ProjectList from "./Pages/ProjectList";
 import BlogList from "./Pages/BlogList";
+import Article from "./Components/PageComponents/Article";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -22,7 +23,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/projects" component={ProjectList} />
-          <Route path="/blogs" component={BlogList} />
+          <Route path="/blogs" exact component={BlogList} />
+          <Route path="/blogs/:slug" component={Article} />
         </Switch>
       </div>
     </Router>

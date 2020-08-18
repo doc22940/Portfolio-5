@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 /* Main Navigation Styles */
@@ -48,11 +47,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav__list {
@@ -68,7 +67,7 @@
   -webkit-transition: height 0.4s linear;
   transition: height 0.4s linear;
   -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  transition-delay: 0.6s;
 }
 
 .nav__link {
@@ -129,7 +128,7 @@
 
 .hamburger:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .burger {
@@ -156,121 +155,134 @@
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(1, -0.47, 1, 1.45);
   transition: -webkit-transform 0.5s cubic-bezier(1, -0.47, 1, 1.45);
   transition: transform 0.5s cubic-bezier(1, -0.47, 1, 1.45);
-  transition: transform 0.5s cubic-bezier(1, -0.47, 1, 1.45), -webkit-transform 0.5s cubic-bezier(1, -0.47, 1, 1.45);
+  transition: transform 0.5s cubic-bezier(1, -0.47, 1, 1.45),
+    -webkit-transform 0.5s cubic-bezier(1, -0.47, 1, 1.45);
   opacity: 1;
 }
 
 .burger::after {
   -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .burger::before {
   -webkit-transform: translateY(8px);
-          transform: translateY(8px);
+  transform: translateY(8px);
 }
 
 /* Open Burger styles */
 .open .burger {
-  -webkit-animation: hide 0.2s var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards;
-          animation: hide 0.2s var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards;
+  -webkit-animation: hide 0.2s var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+    forwards;
+  animation: hide 0.2s var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+    forwards;
 }
 
 .open .burger::after {
-  -webkit-animation: pop var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards, flip var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards;
-          animation: pop var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards, flip var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards;
+  -webkit-animation: pop var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+      forwards,
+    flip var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+      forwards;
+  animation: pop var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards,
+    flip var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+      forwards;
 }
 
 .open .burger::before {
-  -webkit-animation: popTwo var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards, flipTwo var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards;
-          animation: popTwo var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards, flipTwo var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards;
+  -webkit-animation: popTwo var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+      forwards,
+    flipTwo var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+      forwards;
+  animation: popTwo var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45) forwards,
+    flipTwo var(--anim-speed) var(--anim-speed) cubic-bezier(1, -0.47, 1, 1.45)
+      forwards;
 }
 
 /* Burger Keyframes */
 @-webkit-keyframes pop {
   0% {
     -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    transform: translateY(8px);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @keyframes pop {
   0% {
     -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    transform: translateY(8px);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @-webkit-keyframes flip {
   from {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   to {
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 }
 
 @keyframes flip {
   from {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   to {
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 }
 
 @-webkit-keyframes popTwo {
   from {
     -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    transform: translateY(-8px);
   }
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes popTwo {
   from {
     -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    transform: translateY(-8px);
   }
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @-webkit-keyframes flipTwo {
   from {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   to {
     -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 
 @keyframes flipTwo {
   from {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   to {
     -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 
@@ -309,8 +321,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .nav__link {
     margin: 0 5px;
@@ -324,11 +336,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 0;
   }
 }
@@ -338,10 +350,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -383,7 +395,7 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 20px;
   cursor: pointer;
 }
@@ -416,7 +428,7 @@ button {
 
 button:hover {
   -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .modal-container {
@@ -425,16 +437,16 @@ button:hover {
   display: flex;
   height: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .modal-title {
@@ -469,13 +481,13 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .button {
