@@ -10,6 +10,7 @@ const AboutContainer = styled.section`
   position: relative;
   background: rgba(232, 242, 235, 0.7);
   margin-bottom: 5rem;
+
   &::after {
     content: "";
     position: absolute;
@@ -59,7 +60,6 @@ const Paragraph = styled.p`
 `;
 const FlexContainer = styled.div`
   width: 50%;
-  text-align: left;
 
   @media screen and (max-width: 900px) {
     width: 100%;
