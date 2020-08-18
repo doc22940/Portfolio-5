@@ -82,7 +82,7 @@ const BlogCard = ({ title, date, desc, tags, slug }) => {
           <BlogDate>{date}</BlogDate>
           <BlogDesc>{desc}</BlogDesc>
           <BlogTags>
-            {tags.map((tagText, index) => (
+            {tags.slice(0, 2).map((tagText, index) => (
               <Tag key={index}>{tagText}</Tag>
             ))}
           </BlogTags>
