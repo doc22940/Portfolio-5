@@ -60,7 +60,6 @@ const Paragraph = styled.p`
 `;
 const FlexContainer = styled.div`
   width: 50%;
-
   @media screen and (max-width: 900px) {
     width: 100%;
     margin-bottom: 2rem;
