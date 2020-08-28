@@ -35,7 +35,7 @@ const projects = [
 ];
 
 const FullStackCardList = () => {
-  // Trigger animation when the component mounts
+  // Trigger animation when the component mounts to create a smooth transitions
   useLayoutEffect(() => {
     const div = document.querySelector("#cards");
     div.classList.add("animate");
