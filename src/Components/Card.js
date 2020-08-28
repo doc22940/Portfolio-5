@@ -12,7 +12,16 @@ const ButtonStyles = {
 
 Modal.setAppElement("#root");
 function Card(props) {
-  const { title, image, desc, code, site, stack, overlayIcons } = props;
+  const {
+    title,
+    image,
+    desc,
+    code,
+    site,
+    stack,
+    overlayIcons,
+    siteText,
+  } = props;
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <div className="card">
@@ -50,15 +59,27 @@ function Card(props) {
             >
               See Code
             </a>
-            <a
-              className="button"
-              href={site}
-              target="_blank"
-              title="Live Site Link"
-              rel="noopener noreferrer"
-            >
-              Live Site
-            </a>
+            {siteText ? (
+              <a
+                className="button"
+                href={site}
+                target="_blank"
+                title="Live Site Link"
+                rel="noopener noreferrer"
+              >
+                {siteText}
+              </a>
+            ) : (
+              <a
+                className="button"
+                href={site}
+                target="_blank"
+                title="Live Site Link"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </a>
+            )}
           </div>
         </div>
         <div>

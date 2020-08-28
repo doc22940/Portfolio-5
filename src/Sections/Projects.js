@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import CardsList from "../Components/CardList";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import FullStackCardList from "../Components/FullStackCardList";
 
 const Container = styled.section`
   background: #e8f2eb;
@@ -11,7 +12,7 @@ const Container = styled.section`
 
 const Title = styled.h1`
   font-size: 3rem;
-  margin: 10px 0 50px 0;
+  margin: 10px 0 20px 0;
 `;
 
 const Button = styled.a`
@@ -27,11 +28,57 @@ const Button = styled.a`
   }
 `;
 
+const Tabs = styled.div`
+  display: inline-flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 500ms ease;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    transition: transform 500ms ease;
+    width: 50%;
+    height: 5px;
+    background: currentcolor;
+    left: 0;
+    bottom: 0;
+  }
+  &.tab-selected {
+    &::after {
+      transform: translateX(100%);
+    }
+  }
+`;
+const Tab = styled.h2`
+  cursor: pointer;
+  &:first-of-type {
+    margin: 10px 20px 10px 10px;
+  }
+  &:last-of-type {
+    margin: 10px 10px 10px 20px;
+  }
+`;
+
 const Projects = () => {
+  const [frontend, setFrontend] = useState(true);
+
+  const toggle = () => {
+    setFrontend((prevState) => !prevState);
+  };
+
   return (
     <Container id="projects">
       <Title>Some of my Work</Title>
-      <CardsList />
+      <Tabs className={frontend ? "" : "tab-selected"}>
+        <Tab onClick={toggle}>Frontend</Tab>
+        <Tab onClick={toggle}>Fullstack</Tab>
+      </Tabs>
+
+      {frontend ? <CardsList /> : <FullStackCardList />}
+
       <Link to="/projects" style={{ textDecoration: "none" }}>
         <Button>View More</Button>
       </Link>
