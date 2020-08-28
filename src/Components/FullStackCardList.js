@@ -35,6 +35,7 @@ const projects = [
 ];
 
 const FullStackCardList = () => {
+  // Trigger animation when the component mounts
   useLayoutEffect(() => {
     const div = document.querySelector("#cards");
     div.classList.add("animate");
