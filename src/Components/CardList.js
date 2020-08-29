@@ -92,7 +92,7 @@ const projects = [
     code: "https://github.com/MeRichard123/Equifox",
     site: "https://teamequifox.netlify.com/",
     desc:
-      "Equifox is a FLL team. They needed a way to present themselves at the annual competition without having to carry around lots of posters. They asked me to make them a website so that they can show who they are and how their robot is coming along. As a result they are now able to present their work in a more portable fashion.",
+      "Equifox is a <acronym title='First Lego League'><a href='http://firstlegoleague.org/'>FLL</a></acronym> team. They needed a way to present themselves at the annual competition without having to carry around lots of posters. They asked me to make them a website so that they can show who they are and how their robot is coming along. As a result they are now able to present their work in a more portable fashion.",
   },
 ];
 

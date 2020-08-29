@@ -3,6 +3,7 @@ import "../Styles/main.css";
 import Modal from "react-modal";
 import { MdClose } from "react-icons/md";
 import { IconContext } from "react-icons";
+import parse from "react-html-parser";
 
 const ButtonStyles = {
   position: "absolute",
@@ -48,7 +49,7 @@ function Card(props) {
         <div className="modal-container">
           <h2 className="modal-title">{title}</h2>
           <h3 className="techsUsed">{stack}</h3>
-          <p className="modal-desc">{desc}</p>
+          <p className="modal-desc">{parse(desc)}</p>
           <div className="buttons">
             <a
               className="button"

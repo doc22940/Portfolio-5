@@ -29,7 +29,7 @@ const projects = [
     code: "https://github.com/MeRichard123/GitMerged",
     site: "https://youtu.be/UVIPgdafxew",
     desc:
-      "As Developers finding a Date can be difficult, as we sit at a screen all day. Furthermore it can be tedious to keep explaining what we do. This is where GitMerged comes in. GitMerged is a tinder like platform where developers can share their interests and the technologies they work with. As a result developers can connect with eachother and find their true love. ",
+      "As Developers finding a Date can be difficult, as we sit at a screen all day. Furthermore it can be tedious to keep explaining what we do. This is where GitMerged comes in. GitMerged is a tinder like platform where developers can share their interests and the technologies they work with. As a result developers can connect with each other and find their true love. ",
     siteText: "Demo",
   },
 ];
