@@ -510,3 +510,63 @@ button:hover {
   color: gray;
 }
 /*# sourceMappingURL=main.css.map */
+.name {
+  position: absolute;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-size: calc(1vw + 5rem);
+  z-index: 200;
+}
+.name:first-of-type {
+  margin-left: 0.5em;
+  left: 20vw;
+}
+.name:last-of-type {
+  right: 20vw;
+}
+@media screen and (max-width: 900px) {
+  .name {
+    font-size: calc(1vw + 2rem);
+  }
+  .name:first-of-type {
+    left: 1px;
+  }
+  .name:last-of-type {
+    right: 1px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 1899px) {
+  .name:first-of-type {
+    left: 50px;
+  }
+  .name:last-of-type {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .name {
+    font-size: calc(1vw + 2rem);
+  }
+  .name:first-of-type {
+    left: 40px;
+  }
+  .name:last-of-type {
+    right: 40px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .name:first-of-type {
+    left: 1px;
+  }
+  .name:last-of-type {
+    right: 1px;
+  }
+}
+.loader {
+  width: 10px;
+  height: 10px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background: black;
+}

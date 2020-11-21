@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 function Nav() {
   const [isActive, toggleActive] = useState(false);
@@ -17,7 +18,12 @@ function Nav() {
   });
 
   return (
-    <nav className={isTop ? "nav" : "nav scrolled"}>
+    <motion.nav
+      className={isTop ? "nav" : "nav scrolled"}
+      initial={{ y: -250 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+    >
       <div class="flex-wrapper">
         <a className="nav__logo" href="#intro">
           Richard Coric
@@ -51,7 +57,7 @@ function Nav() {
           </a>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 }
 
