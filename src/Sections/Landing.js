@@ -23,6 +23,10 @@ const RichVariant = {
   },
   animate: {
     x: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+    },
   },
 };
 const ArdVariant = {
@@ -31,6 +35,10 @@ const ArdVariant = {
   },
   animate: {
     x: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+    },
   },
 };
 
