@@ -74,8 +74,8 @@ const cardData = [
     hasSite: true,
   },
   {
-    title: "Node Discord Bot",
-    desc: "Discord Bot for Our Server",
+    title: "Discord Bot",
+    desc: "Built with NodeJS",
     site: "",
     code: "https://github.com/merichard123/Developers-Discord-Bot/",
     hasSite: false,
